@@ -1,18 +1,19 @@
 {% extends "layout.html" %} 
 
 {% block content %}
-  <main class="hero-section">
-      <div class="container">
-          <div class="section-content">
-              <h2>Discover places near you.</h2>
-              <a href="#" class="btn-primary">Sign up</a>
-              <a href="{{ url_for('about') }}" class="btn-secondary">Learn more</a>
-              <div>Hi Sara! love you</div>
-          </div>
-          <div class="section-device">
-              <img src="static/img/device.png">
-          </div>
-          <div class="clearfix"></div>
-      </div>
-  </main>
+<main class="hero-section">
+    <div class="container">
+        <div class="section-content">
+            <h2>Discover places near you.</h2>
+            <a href="http://omfgdogs.com/" class="btn-primary">Sign up</a>
+            <a href="{{ url_for('about') }}" class="btn-secondary">Learn more</a>
+            <br><br>
+            <div>Hi Sara! love you. You are the best. Jennie is nice too</div>
+        </div>
+        <div class="section-device">
+            <img src="static/img/device.png">
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</main>
 {% endblock %}
