@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://localhost/learningflask"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://hdpgauhjdxzeqz:Ii5YeouMYrEqFwU-WpXeGQtiD8@ec2-54-243-63-130.compute-1.amazonaws.com:5432/d9gdontp6a2buh"
 db.init_app(app)
 
 app.secret_key = "development-key"
