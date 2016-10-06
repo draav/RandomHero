@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 from models import db, User, Place
 from forms import SignupForm, LoginForm, AddressForm
-from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://hdpgauhjdxzeqz:Ii5YeouMYrEqFwU-WpXeGQtiD8@ec2-54-243-63-130.compute-1.amazonaws.com:5432/d9gdontp6a2buh"
+# set in order to supress flask alchemy user warning
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False 
 db.init_app(app)
 
 app.secret_key = "development-key"

@@ -1,12 +1,12 @@
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from werkzeug import generate_password_hash, check_password_hash
 
 import geocoder
 import urllib2
 import json
 
-
 db = SQLAlchemy()
+
 
 class User(db.Model):
 	__tablename__ = 'users'
